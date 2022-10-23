@@ -6,6 +6,7 @@ This project is a customer service API used for illustration purposes.
 - Node.js 
 - Yarn or NPM
 - MongoDB
+- RabbitMQ
 
 
 ## Installation

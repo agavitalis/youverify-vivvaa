@@ -1,11 +1,12 @@
-# # Yandit Air Quality API
+# # YouVerify Order-Service API
 
-This project is a simple air quality check API using `iqair`.
+This project is a order service API used for illustration purposes.
 
 ## Prerequisites
 - Node.js 
 - Yarn or NPM
 - MongoDB
+- RabbitMQ
 
 
 ## Installation
@@ -28,9 +29,9 @@ nano .env
 ```bash
 npm run dev
 ```
-The application will be live on http://localhost:5000 and you can view the docs on  http://localhost:5000/docs
+The application will be live on http://localhost:5003 and you can view the docs here - [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/2979665-b9e3cfe1-88ec-4017-8aae-ca4d9406c58e?action=collection%2Ffork&collection-url=entityId%3D2979665-b9e3cfe1-88ec-4017-8aae-ca4d9406c58e%26entityType%3Dcollection%26workspaceId%3Dd0d30f99-ced4-46e0-a9a5-a6ef9b0591ea)
 
-- Start Application in orderion mode
+- Start Application in production mode
 ```bash
 npm run build
 ```
@@ -39,7 +40,7 @@ npm run build
 npm run start
 ```
 
-The application will be live on http://localhost:5000 and you can view the docs on  http://localhost:5000/docs
+The application will be live on http://localhost:5003 and you can view the docs here - [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/2979665-b9e3cfe1-88ec-4017-8aae-ca4d9406c58e?action=collection%2Ffork&collection-url=entityId%3D2979665-b9e3cfe1-88ec-4017-8aae-ca4d9406c58e%26entityType%3Dcollection%26workspaceId%3Dd0d30f99-ced4-46e0-a9a5-a6ef9b0591ea)
 
 ## Running the app with docker
 
@@ -48,15 +49,15 @@ You can also run this application using docker by building the image and mapping
 To proceed,navigate to the root directory of the application and build the application image using the following command:
 
 ```bash
-docker build . -t <your username>/order-service
+docker build . -t <your username>/customer-service
 ```
 Run your image in detached mode with -d tag. The -p flag map a public port to a private port inside the container. Run the image you previously built using the command:
 
 ```bash
-docker run -p 5000:5000 -d <your username>/order-service
+docker run -p 5003:5003 -d <your username>/customer-service
 ```
 
-The application will be live on http://localhost:5000 and you can view the docs on  http://localhost:5000/docs
+The application will be live on http://localhost:5003 and you can view the docs - [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/2979665-b9e3cfe1-88ec-4017-8aae-ca4d9406c58e?action=collection%2Ffork&collection-url=entityId%3D2979665-b9e3cfe1-88ec-4017-8aae-ca4d9406c58e%26entityType%3Dcollection%26workspaceId%3Dd0d30f99-ced4-46e0-a9a5-a6ef9b0591ea)
 
 ## Stay in touch
 
@@ -64,4 +65,4 @@ The application will be live on http://localhost:5000 and you can view the docs 
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+Licence is [MIT licensed](LICENSE).
