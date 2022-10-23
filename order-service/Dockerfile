@@ -4,12 +4,12 @@ WORKDIR /order-service
 
 COPY package*.json ./
 
-RUN npm install --only=orderion
+RUN npm install --only=production
 
 COPY . .
 
 RUN npm run build
 
-EXPOSE 5000
+EXPOSE 5003
 
 CMD ["npm", "start"]
