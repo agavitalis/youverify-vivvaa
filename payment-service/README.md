@@ -28,6 +28,13 @@ nano .env
 - Start Application in development mode 
 ```bash
 npm run dev
+
+```
+
+- Start Application Transaction Background Service in development mode 
+```bash
+npm run dev-worker
+
 ```
 The application will be live on http://localhost:5004 and you can view the docs here - [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/2979665-b9e3cfe1-88ec-4017-8aae-ca4d9406c58e?action=collection%2Ffork&collection-url=entityId%3D2979665-b9e3cfe1-88ec-4017-8aae-ca4d9406c58e%26entityType%3Dcollection%26workspaceId%3Dd0d30f99-ced4-46e0-a9a5-a6ef9b0591ea)
 
@@ -38,6 +45,10 @@ npm run build
 
 ```bash
 npm run start
+```
+
+```bash
+npm run start-worker
 ```
 
 The application will be live on http://localhost:5004 and you can view the docs here - [![Run in Postman](https://run.pstmn.io/button.svg)](https://god.gw.postman.com/run-collection/2979665-b9e3cfe1-88ec-4017-8aae-ca4d9406c58e?action=collection%2Ffork&collection-url=entityId%3D2979665-b9e3cfe1-88ec-4017-8aae-ca4d9406c58e%26entityType%3Dcollection%26workspaceId%3Dd0d30f99-ced4-46e0-a9a5-a6ef9b0591ea)

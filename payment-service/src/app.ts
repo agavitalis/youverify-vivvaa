@@ -1,6 +1,5 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import swaggerUi from 'swagger-ui-express';
 import { connectToDatabase } from "./config/database";
 import { transactionRoute } from './routes/transaction.route';
 import { errorHandler } from './middlewares/index';
